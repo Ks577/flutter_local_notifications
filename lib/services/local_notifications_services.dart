@@ -110,7 +110,6 @@ class LocalNotificationService {
       {required int id,
       required String title,
       required String body,
-      required String payload,
       required DateTime scheduledNotificationDateTime}) async {
     return _localNotificationService.zonedSchedule(
         id,

@@ -26,7 +26,8 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Drink Water',style: TextStyle(color: Colors.white),
+          'Drink Water',
+          style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
       ),
@@ -74,7 +75,10 @@ class _HomeState extends State<Home> {
                                   style: ElevatedButton.styleFrom(
                                     padding: EdgeInsets.all(10),
                                   ),
-                                  child: const Text('Notification in 4 sec', style: TextStyle(color: Colors.white),)))
+                                  child: const Text(
+                                    'Notification in 4 sec',
+                                    style: TextStyle(color: Colors.white),
+                                  )))
                         ]),
                     const SizedBox(
                       height: 15,
@@ -96,12 +100,18 @@ class _HomeState extends State<Home> {
                                   style: ElevatedButton.styleFrom(
                                     padding: EdgeInsets.all(4),
                                   ),
-                                  child: const Text('Periodical notification', style: TextStyle(color: Colors.white),))),
+                                  child: const Text(
+                                    'Periodical notification',
+                                    style: TextStyle(color: Colors.white),
+                                  ))),
                           Container(
                               height: 60,
                               width: 150,
                               child: ElevatedButton(
-                                  child: const Text('Notification picker', style: TextStyle(color: Colors.white),),
+                                  child: const Text(
+                                    'Notification picker',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
                                   onPressed: () => _show(context)))
                         ]),
                     SizedBox(height: 15),
@@ -116,13 +126,17 @@ class _HomeState extends State<Home> {
                                   await service.scheduleDailyNotification(
                                     id: 4,
                                     title: 'Daily notification',
-                                    body: 'Good evening, do you remember to drink water?!',
+                                    body:
+                                        'Good evening, do you remember to drink water?!',
                                   );
                                 },
                                 style: ElevatedButton.styleFrom(
                                   padding: EdgeInsets.all(4),
                                 ),
-                                child: const Text('Daily notification', style: TextStyle(color: Colors.white),))),
+                                child: const Text(
+                                  'Daily notification',
+                                  style: TextStyle(color: Colors.white),
+                                ))),
                         Container(
                             height: 60,
                             width: 150,
@@ -134,7 +148,10 @@ class _HomeState extends State<Home> {
                                 padding: EdgeInsets.all(10),
                                 primary: Colors.pinkAccent,
                               ),
-                              child: const Text('Cancel notification', style: TextStyle(color: Colors.white),),
+                              child: const Text(
+                                'Cancel notification',
+                                style: TextStyle(color: Colors.white),
+                              ),
                             ))
                       ],
                     ),
